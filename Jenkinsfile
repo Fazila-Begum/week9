@@ -9,7 +9,7 @@ pipeline{
       }
       stage('Dokcer Login'){
         steps{
-            bat "docker login -u fazilabegum -p password"
+            bat "docker login -u fazilabegum -p admin@123"
         }
       }
       stage('push Docker Image to Docker Hub'){
@@ -34,4 +34,5 @@ pipeline{
             echo 'Pipeline failed. Please check the logs.'
         }
     }
+
 }
